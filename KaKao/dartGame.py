@@ -15,6 +15,8 @@ def Solution(dartResult):
         elif s == '#':
             nums[-1] *= -1
         else:
+            # 내 풀이. My solution
+            # Check if numbers are double digits and regroup
             if dartResult[j-1].isdigit():
                 nums[-1] = nums[-1] * 10 + int(s)
             else :
