@@ -3,7 +3,11 @@ upload my solutions of Leetcode problems. If there're any errors you found in my
 Leetcode problem solutions
 - leetcode prob 4 Median of Two Sorted Arrays
 - leetcode prob 5 Longest Palindromic Substring
+- leetcode prob 6 Zigzag conversion
+- leetcode prob 11 Container with most water 
 - leetcode prob 56 Merged Intervals
+- leetcode prob 73 Set Matrix Zeros
+- leetcode prob 621 Task Scheduler
 
 리트코드, 카카오 코딩테스트 문제 풀기. 파이썬 알고리즘 인터뷰에 있는 솔루션을 참고한 경우도 있고 온전히 제가 푼 것도 있습니다. 누구든 제 풀이를 참고하다가 찾은 오류가 있으면 언제든 말해주세요!
 
