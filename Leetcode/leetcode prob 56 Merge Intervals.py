@@ -14,3 +14,5 @@ class Solution:
 solution = Solution()
 intervals = [[2,6], [10, 15], [15,18], [1,3], [5,6], [8,10]]
 print(solution.merge(intervals))
+
+#파이썬 알고리즘 인터뷰 59번 문제 풀이

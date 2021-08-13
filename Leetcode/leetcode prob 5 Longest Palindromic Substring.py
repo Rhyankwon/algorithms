@@ -19,3 +19,5 @@ class Solution:
 
 solution = Solution()
 print(solution.longestPalindrome('aabbsdfadfgggggb'))
+
+#파이썬 알고리즘 인터뷰 6번 문제
