@@ -26,13 +26,11 @@ class Solution:
                     nums[i][j] = '#'
                     outside.append([i, j])
         outside = [[0, 0]]
-        # stack = []
         # 총 얼음 갯수
         numice = sum(x.count(1) for x in nums)
         while outside:
             # 시작 시 한번 확인한 외부 공기는 전부 '#'표시.
             i, j = outside.pop()
-            # stack.append([i, j])
             nums[i][j] = '#'
             ifout_(i-1, j)
             ifout_(i+1, j)
@@ -41,7 +39,6 @@ class Solution:
         count = 0
         melted_ice = 0
         while numice != melted_ice :
-            # print(nums)
             count += 1
             for i in list(ice):
                 # 외부 공기에 2번 이상 스친 경우 녹으니까 0으로 표지
@@ -49,11 +46,10 @@ class Solution:
                     melted_ice += 1
                     nums[i[0]][i[1]] = 0
                     outside.append(i)
-                    # stack.append(i)
                     del ice[i]
             stack2 = outside[:]
-            for i, j in stack2:
-                outside.pop(0)
+            while outside:
+                i, j = outside.pop()
                 nums[i][j] = '#'
                 ifout_(i-1, j)
                 ifout_(i+1, j)
@@ -62,7 +58,6 @@ class Solution:
         if not numice :
             print(0)
         else :
-            # print(len(stack))
             print(count)
             
 solution = Solution()
