@@ -9,13 +9,14 @@ import pdb
 정답이 아니니까 이걸 그대로 공부하진 마시고, 근데 아이디어는 제가 그렇게 틀리게 하진 않은 것 같아서.. 도움이 될지도 모르겠네요.
 물론 나중에도 가끔 이 문제를 들여다보고 가능하다면 맞는 풀이로 만들어서 업데이트 할 생각입니다. 그때까지는
 아래 솔루션은 정답이 아닙니다! 심지어 사이사이에 수정하는거라 처음에 제가 한것보다 더 틀려있을 수도 있어요 ㅋㅋ
+210816 필요없는 부분 제거 후 다시 테스트해봤는데 여전히 안됨.. 하긴 그 문제는 아니였을테니까
 '''
 
 class Solution:
     def winterTest(self, M, N, nums):
-        # 소프티어에 문제를 제출할때에는 아래의 두 라인을 추가해야함. 
-        # M, N = map(int, input().split())
-        # nums = [list(map(int, input().split())) for _ in range(M)]
+        # 소프티어에 문제를 제출할때에는 아래의 두 라인을 추가해야함.
+#         M, N = map(int, input().split())
+#         nums = [list(map(int, input().split())) for _ in range(M)]
         ice = collections.defaultdict(int)
         def ifout_(i, j):
             if i <= M-1 and i >= 0 and j >= 0 and j <= N - 1:
@@ -29,26 +30,10 @@ class Solution:
         outside = [[0, 0]]
         # 총 얼음 갯수
         numice = sum(x.count(1) for x in nums)
-        while outside:
-            # 시작 시 한번 확인한 외부 공기는 전부 '#'표시.
-            i, j = outside.pop()
-            nums[i][j] = '#'
-            ifout_(i-1, j)
-            ifout_(i+1, j)
-            ifout_(i, j-1)
-            ifout_(i, j+1)
         count = 0
         melted_ice = 0
-        while numice != melted_ice :
+        while numice > melted_ice :
             count += 1
-            for i in list(ice):
-                # 외부 공기에 2번 이상 스친 경우 녹으니까 0으로 표지
-                if ice[i] >= 2:
-                    melted_ice += 1
-                    nums[i[0]][i[1]] = 0
-                    outside.append(i)
-                    del ice[i]
-            stack2 = outside[:]
             while outside:
                 i, j = outside.pop()
                 nums[i][j] = '#'
@@ -56,6 +41,13 @@ class Solution:
                 ifout_(i+1, j)
                 ifout_(i, j-1)
                 ifout_(i, j+1)
+            for i in list(ice):
+                # 외부 공기에 2번 이상 스친 경우 으니까 0으로 표지
+                if ice[i] >= 2:
+                    melted_ice += 1
+                    nums[i[0]][i[1]] = 0
+                    outside.append(i)
+                    del ice[i]
         if not numice :
             print(0)
         else :
