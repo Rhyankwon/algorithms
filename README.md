@@ -42,3 +42,4 @@ Leetcode problem solutions
 - 3번 장애물 인식 프로그램
 - 4번 8단 변속기
 - 5번 조립라인
+- 15번 성적 평균
