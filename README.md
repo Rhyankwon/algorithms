@@ -1,4 +1,4 @@
-upload my solutions of Leetcode problems. If there're any errors you found in my codes, don't hesitate to tell me:)
+upload my Python solutions of Leetcode problems. If there're any errors you found in my codes, don't hesitate to tell me:)
 
 Leetcode problem solutions
 - leetcode prob 4 Median of Two Sorted Arrays
@@ -16,7 +16,7 @@ Leetcode problem solutions
 - leetcode prob 77 Different Ways to Add Parentheses
 
 
-리트코드, 현대차 소프티어(softeer), 카카오(KAKAO) 코딩테스트 문제 풀기. 리트코드의 경우 파이썬 알고리즘 인터뷰에 있는 솔루션을 참고한 경우도 있고 온전히 제가 푼 것도 있습니다. 누구든 제 풀이를 참고하다가 찾은 오류가 있으면 언제든 말해주세요!
+리트코드, 현대차 소프티어(softeer), 백준(baekjoon), 카카오(KAKAO) 코딩테스트 문제 풀기(파이썬). 리트코드의 경우 파이썬 알고리즘 인터뷰에 있는 솔루션을 참고한 경우도 있고 온전히 제가 푼 것도 있습니다. 누구든 제 풀이를 참고하다가 찾은 오류가 있으면 언제든 말해주세요!
 
 지금까지 푼 리트코드 문제 해설
 - 리트코드 문제 4 두 정렬된 배열의 중간값 찾기 
@@ -42,4 +42,10 @@ Leetcode problem solutions
 - 3번 장애물 인식 프로그램
 - 4번 8단 변속기
 - 5번 조립라인
+- 8, 9번 바이러스, 수퍼 바이러스
 - 15번 성적 평균
+- 20번 GBC
+
+지금까지 푼 백준 문제 해설
+- 2839번 설탕 배달
+
