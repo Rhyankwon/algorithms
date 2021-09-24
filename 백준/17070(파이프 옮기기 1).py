@@ -26,7 +26,7 @@ a = [list(map(int, input().split())) for _ in range(n)]
 ans = 0
 dfs(0, 1, 0)
 print(ans)
-
+#-----------------------------------
 # import sys
 # input = sys.stdin.readline
 
@@ -56,21 +56,28 @@ print(ans)
 
 # dfs(['right'], [0, 1])
 # print(num)
-
+#----------------------------
 # import sys
 # input = sys.stdin.readline   #dp풀이
-# n = int(input()) 
-# s = [list(map(int, input().split())) for i in range(n)]
-# result = [[[0 for i in range(n)] for i in range(n)] for i in range(3)]
-# result[0][0][1] = 1
-# for i in range(2, n):
-#     if s[0][i] == 0:
-#         result[0][0][i] = result[0][0][i - 1]
-# for i in range(1, n):
-#     for j in range(2, n):
-#         if s[i][j] == 0 and s[i - 1][j] == 0 and s[i][j - 1] == 0:
-#             result[2][i][j] = result[0][i - 1][j - 1] + result[1][i - 1][j - 1] + result[2][i - 1][j - 1]
-#         if s[i][j] == 0:
-#             result[0][i][j] = result[0][i][j - 1] + result[2][i][j - 1]
-#             result[1][i][j] = result[1][i - 1][j] + result[2][i - 1][j]
-# print(result[0][n - 1][n - 1] + result[1][n - 1][n - 1] + result[2][n - 1][n - 1])
+# N = int(input())
+# grid = [input().split() for i in range(N)]
+
+# dp = [[[0 for i in range(N)] for j in range(N)] for k in range(3)]
+
+# #0 오른쪽, 1 아래, 2 오른쪽아래
+# dp[0][0][1] = 1
+# for i in range(2, N):
+#     if grid[0][i] != '1':
+#         dp[0][0][i] = dp[0][0][i-1]
+
+# for i in range(1, N):
+#     for j in range(2, N):
+#         if grid[i][j] != '1' and grid[i-1][j] != '1' and grid[i][j-1] != '1':
+#             dp[2][i][j] = dp[0][i-1][j-1] + dp[1][i-1][j-1] + dp[2][i-1][j-1]
+
+#         if grid[i][j] != '1':
+#             dp[1][i][j] = dp[2][i-1][j] + dp[1][i-1][j]
+#             dp[0][i][j] = dp[2][i][j-1] + dp[0][i][j-1]
+
+
+# print(sum([dp[i][N-1][N-1] for i in range(3)]))
