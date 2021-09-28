@@ -30,7 +30,8 @@ for i in brackets:
                 break
     if ex == 1:
         break
-
+    if not stack: #추가. ']'혹은 ')'의 짝이 없는 경우 추가. 백준에서는 문제없이 넘어가서 수정 요청했다.
+        break
 for i in stack:
     if i.isdigit():
         result += int(i)
