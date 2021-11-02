@@ -91,6 +91,8 @@ Leetcode problem solutions
 - 2281 데스노트
 - 2616 소형기관차
 - 16506 cpu
+- 2290 LCD test
+- 12869 뮤탈리스크
 
 
 지금까지 푼 프로그래머스 문제 해설
