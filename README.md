@@ -94,6 +94,7 @@ Leetcode problem solutions
 - 2290 LCD test
 - 12869 뮤탈리스크
 - 16113 시그널
+- 6987 월드컵
 
 
 지금까지 푼 프로그래머스 문제 해설
