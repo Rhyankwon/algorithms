@@ -117,3 +117,4 @@ Leetcode problem solutions
 - 금과 은 운반하기
 - 124 나라의 숫자
 - 단어 변환
+- n^2 배열 자르기
