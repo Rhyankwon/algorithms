@@ -1,4 +1,12 @@
-upload my Python solutions of Leetcode problems. If there're any errors you found in my codes, don't hesitate to tell me:)
+upload my Python solutions of Leetcode problems. If there're any errors you found in my codes, don't hesitate to let me know:)
+
+## License
+
+See the [LICENSE](https://github.com/Rhyankwon/algorithms/blob/main/README.md) file for license rights and limitations.
+
+
+CREATED BY RHYANKWON
+
 
 Leetcode problem solutions
 - leetcode prob 4 Median of Two Sorted Arrays
